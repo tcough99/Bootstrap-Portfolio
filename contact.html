@@ -10,43 +10,55 @@
 
 
 <body>
-
-  <header id="masthead">
-    <div class="container">
-      <a href="index.html" id="logo">Thomas Coughlin</a>
-      <nav>
-        <a href="index.html">About</a>
-        <a href="portfolio.html">Portfolio</a>
-        <a href="contact.html">Contact</a>
+    <div class="row">
+        <div class="col-md-12"></div>
+      
+      <nav class="navbar navbar-expand-lg navbar-light bg-primary">
+        <a class="navbar-brand"><strong>Thomas Coughlin</strong></strong></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="index.html"sr-only>About</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="portfolio.html">Portfolio</a>
+              </li>
+            
+          </ul>
+      </div>
+      
+      </div>
       </nav>
-    </div>
-  </header>
-
+<br>
+<br>
+<br>
   <div id="main-container" class="container">
     <section class="main-section">
-      <h1>Contact</h1>
-
-      <form id="contact-form">
-        <ul>
-          <li>
-            <label for="name">Name</label>
-            <input type="text" id="name" name="name" placeholder="John Smith" required="required">
-          </li>
-          <li>
-            <label for="email">Email</label>
-            <input type="email" id="email" name="email" placeholder="example@gmail.com" required="required">
-          </li>
-          <li>
-            <label for="message">Message</label>
-            <textarea id="message" name="message" required="required"></textarea>
-          </li>
-        </ul>
-        <input type="submit">
-      </form>
-
+        <div class="form-group">
+            <label for="inputName">Name</label>
+            <input type="Name" class="form-control" id="inputName" placeholder="John Smith">
+        </div>
+        <div class="form-group">
+            <label for="inputEmail">Email</label>
+            "<input type="email" class="form-control" id="inputEmail" placeholder="example@gmail.com">
+        </div>
+          <div class="form-group">
+            <label for="inputMessage">Message</label>
+            <input type="Message" class="form-control" id="inputMessage" placeholder="Password">
+        </div>
+      </div class= "form-group">
+      <button type="submit" class="btn btn-primary ">Submit</button>
+    </div>
+    </div>
+  </form>
     </section>
-
-  </div>
   <footer id="sticky-footer" class="py-4 bg-dark text-white-50">
       <div class="container text-center">
         <p>Copyright</p>
